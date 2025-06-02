@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- State when unlocked -->
+    <item android:state_selected="true">
+        <shape>
+            <gradient
+                android:type="linear"
+                android:angle="145"
+                android:startColor="@color/achievement_unlocked_start"
+                android:endColor="@color/achievement_unlocked_end" />
+            <corners android:radius="8dp" />
+            <stroke
+                android:width="2dp"
+                android:color="@color/achievement_unlocked_border" />
+        </shape>
+    </item>
+    <!-- Default state (locked) -->
+    <item>
+        <shape>
+            <gradient
+                android:type="linear"
+                android:angle="145"
+                android:startColor="@color/achievement_locked_start"
+                android:endColor="@color/achievement_locked_end" />
+            <corners android:radius="8dp" />
+            <stroke
+                android:width="2dp"
+                android:color="@color/achievement_locked_border" />
+        </shape>
+    </item>
+</selector>

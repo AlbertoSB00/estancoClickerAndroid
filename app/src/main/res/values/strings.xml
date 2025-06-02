@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">Fumadero Tycoon</string>
+
+    <!-- Game UI -->
+    <string name="game_title">Fumadero Tycoon</string>
+    <string name="reset_button">🗑️ RESET COMPLETO</string>
+    <string name="money_format">💰 %s€</string>
+    <string name="income_format">📈 %s€/s</string>
+    <string name="click_value_format">💰 %s€/click</string>
+    <string name="prestige_level_format" formatted="false">⭐ Lv.%d (+%d%%)</string>
+
+    <!-- Business Info -->
+    <string name="current_business_title">Tu Negocio Actual</string>
+    <string name="business_level_format">Nivel: %d</string>
+    <string name="default_business_name">Vendedor de Cigarrillos</string>
+    <string name="default_business_description">Vendes cigarrillos sueltos en la calle</string>
+    <string name="default_business_sign">VENDIENDO CIGARRILLOS</string>
+
+    <!-- Click Area -->
+    <string name="click_text">¡Haz click para vender cigarrillos!</string>
+    <string name="click_value_display">+%s€</string>
+
+    <!-- Upgrades -->
+    <string name="click_upgrades_title">🖱️ Mejoras de Clicks Manuales</string>
+    <string name="business_upgrades_title">🚀 Evolución del Negocio</string>
+    <string name="upgrade_count_format">Tienes: %d</string>
+    <string name="upgrade_cost_format">%s€</string>
+    <string name="upgrade_benefit_format">+%s€ por click</string>
+    <string name="upgrade_income_format">+%s€/seg</string>
+
+    <!-- Prestige -->
+    <string name="prestige_title">⭐ Sistema de Prestigio</string>
+    <string name="prestige_level_display">Nivel de Prestigio: %d</string>
+    <string name="prestige_points_display">Puntos de Prestigio: %d</string>
+    <string name="prestige_bonus_display">Bonus Actual: +%d%%</string>
+    <string name="prestige_next_points">Próximos Puntos: %d</string>
+    <string name="prestige_button">🌟 HACER PRESTIGIO</string>
+    <string name="prestige_requirement">(Requiere 25B€ ganados)</string>
+
+    <!-- Save System -->
+    <string name="save_system_title">💾 Sistema de Guardado</string>
+    <string name="export_title">📤 Exportar Partida</string>
+    <string name="import_title">📥 Importar Partida</string>
+    <string name="export_button">📋 GENERAR CÓDIGO</string>
+    <string name="import_button">🔄 CARGAR PARTIDA</string>
+    <string name="export_hint">El código aparecerá aquí</string>
+    <string name="import_hint">Pega aquí tu código de partida</string>
+
+    <!-- Achievements -->
+    <string name="achievements_title" formatted="false">🏆 Logros (%d/%d)</string>
+
+    <!-- Notifications -->
+    <string name="achievement_unlocked">¡Logro desbloqueado: %s!</string>
+    <string name="upgrade_purchased" formatted="false">¡%s comprado! +%s€ por click</string>
+    <string name="business_evolved">¡Negocio evolucionado! Ahora eres: %s</string>
+    <string name="prestige_completed" formatted="false">¡Prestigio completado! Nivel %d (+%d%% bonus) - Ganaste %d puntos de prestigio!</string>
+    <string name="game_reset">¡Juego reseteado completamente! Empezando desde cero...</string>
+    <string name="export_success">¡Código de partida generado y copiado al portapapeles!</string>
+    <string name="export_success_manual">¡Código de partida generado! Cópialo manualmente.</string>
+    <string name="import_success">¡Partida cargada exitosamente! (Exportada el: %s)</string>
+    <string name="import_error">Error al cargar la partida. Verifica que el código sea válido.</string>
+    <string name="export_error">Error al generar el código de partida: %s</string>
+
+    <!-- Dialogs -->
+    <string name="prestige_confirm_title">Confirmar Prestigio</string>
+    <string name="prestige_confirm_message">¿Estás seguro de que quieres hacer prestigio? Perderás todo tu progreso actual pero ganarás bonificaciones permanentes.</string>
+    <string name="reset_confirm_title">Confirmar Reset</string>
+    <string name="reset_confirm_message">¿ESTÁS SEGURO? Esto borrará COMPLETAMENTE tu progreso, incluyendo prestigio y logros. Esta acción NO se puede deshacer.</string>
+    <string name="reset_final_confirm">ÚLTIMA CONFIRMACIÓN: ¿Realmente quieres borrar TODO tu progreso?</string>
+    <string name="import_confirm_title">Confirmar Importación</string>
+    <string name="import_confirm_message">¿Estás seguro de que quieres cargar esta partida? Se perderá tu progreso actual.</string>
+    <string name="prestige_requirement_not_met">¡Necesitas ganar al menos 25,000,000,000€ para hacer prestigio!</string>
+    <string name="import_empty_code">Por favor, pega un código de partida válido.</string>
+
+    <!-- Common -->
+    <string name="yes">Sí</string>
+    <string name="no">No</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancelar</string>
+</resources>

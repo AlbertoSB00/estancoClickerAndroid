@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Game Theme Colors -->
+    <color name="primary_brown">#8B4513</color>
+    <color name="secondary_brown">#A0522D</color>
+    <color name="light_brown">#DEB887</color>
+    <color name="dark_brown">#654321</color>
+
+    <!-- Background Gradient -->
+    <color name="bg_gradient_start">#1a1a2e</color>
+    <color name="bg_gradient_mid1">#16213e</color>
+    <color name="bg_gradient_mid2">#0f3460</color>
+    <color name="bg_gradient_mid3">#533483</color>
+    <color name="bg_gradient_end">#8B4513</color>
+
+    <!-- Header Colors -->
+    <color name="header_gradient_start">#8B4513</color>
+    <color name="header_gradient_end">#A0522D</color>
+    <color name="header_border">#FFD700</color>
+
+    <!-- Click Area Colors -->
+    <color name="click_area_gradient_start">#F4A460</color>
+    <color name="click_area_gradient_end">#DEB887</color>
+    <color name="click_area_border">#8B4513</color>
+
+    <!-- Business Info Colors -->
+    <color name="business_info_gradient_start">#F0F8FF</color>
+    <color name="business_info_gradient_end">#E6F3FF</color>
+    <color name="business_info_border">#4682B4</color>
+
+    <!-- Upgrade Colors -->
+    <color name="upgrade_normal_start">#F5DEB3</color>
+    <color name="upgrade_normal_end">#DEB887</color>
+    <color name="upgrade_normal_border">#D2691E</color>
+    <color name="upgrade_affordable_start">#F0FFF0</color>
+    <color name="upgrade_affordable_end">#E6FFE6</color>
+    <color name="upgrade_affordable_border">#32CD32</color>
+    <color name="upgrade_owned_start">#E6FFE6</color>
+    <color name="upgrade_owned_end">#CCFFCC</color>
+
+    <!-- Prestige Colors -->
+    <color name="prestige_bg_start">#1a1a2e</color>
+    <color name="prestige_bg_end">#16213e</color>
+    <color name="prestige_border">#FFD700</color>
+    <color name="prestige_text">#FFD700</color>
+    <color name="prestige_button_available_start">#FFD700</color>
+    <color name="prestige_button_available_end">#FFA500</color>
+    <color name="prestige_button_unavailable_start">#666666</color>
+    <color name="prestige_button_unavailable_end">#444444</color>
+
+    <!-- Save System Colors -->
+    <color name="save_bg_start">#2c3e50</color>
+    <color name="save_bg_end">#34495e</color>
+    <color name="save_border">#3498db</color>
+    <color name="save_text">#3498db</color>
+    <color name="export_button_start">#27ae60</color>
+    <color name="export_button_end">#2ecc71</color>
+    <color name="import_button_start">#e74c3c</color>
+    <color name="import_button_end">#c0392b</color>
+
+    <!-- Achievement Colors -->
+    <color name="achievement_unlocked_start">#FFD700</color>
+    <color name="achievement_unlocked_end">#FFA500</color>
+    <color name="achievement_unlocked_border">#FF8C00</color>
+    <color name="achievement_locked_start">#888888</color>
+    <color name="achievement_locked_end">#666666</color>
+    <color name="achievement_locked_border">#555555</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#2F1B14</color>
+    <color name="text_secondary">#666666</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_gold">#FFD700</color>
+    <color name="text_green">#228B22</color>
+    <color name="text_blue">#4682B4</color>
+
+    <!-- Status Colors -->
+    <color name="success_green">#32CD32</color>
+    <color name="error_red">#DC3545</color>
+    <color name="warning_orange">#FFA500</color>
+    <color name="info_blue">#3498db</color>
+
+    <!-- Floating Money Animation -->
+    <color name="floating_money">#228B22</color>
+
+    <!-- Reset Button -->
+    <color name="reset_button_start">#dc3545</color>
+    <color name="reset_button_end">#c82333</color>
+
+    <!-- Offline Upgrades -->
+    <color name="upgrade_purchased">#1B4A2F</color>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- State when available -->
+    <item android:state_enabled="true">
+        <shape>
+            <gradient
+                android:type="linear"
+                android:angle="135"
+                android:startColor="@color/prestige_button_available_start"
+                android:endColor="@color/prestige_button_available_end" />
+            <corners android:radius="15dp" />
+        </shape>
+    </item>
+    <!-- State when unavailable -->
+    <item android:state_enabled="false">
+        <shape>
+            <gradient
+                android:type="linear"
+                android:angle="135"
+                android:startColor="@color/prestige_button_unavailable_start"
+                android:endColor="@color/prestige_button_unavailable_end" />
+            <corners android:radius="15dp" />
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/panel_background"
+    android:padding="20dp"
+    android:layout_marginBottom="25dp">
+
+    <!-- Header with toggle button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/offline_header_background"
+        android:padding="12dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:id="@+id/offlineUpgradesHeader">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="⏰ Mejoras Offline"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_brown"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/offlineUpgradesToggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="▼"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_brown"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <!-- Offline info (always visible) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/offline_info_background"
+        android:padding="12dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💰 Tiempo Offline Actual"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_brown"
+            android:gravity="center"
+            android:layout_marginBottom="6dp" />
+
+        <TextView
+            android:id="@+id/offlineTimeDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⏰ 1.0 horas máximo"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_green"
+            android:gravity="center"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/offlineEarningsDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💸 Ganancias máximas: 0€"
+            android:textSize="11sp"
+            android:textColor="@color/text_secondary"
+            android:gravity="center"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/offlineProgressDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📊 Mejoras compradas: 0/8"
+            android:textSize="10sp"
+            android:textColor="@color/text_blue"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <!-- Offline upgrades container (collapsible) -->
+    <LinearLayout
+        android:id="@+id/offlineUpgradesContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:visibility="gone" />
+
+</LinearLayout>

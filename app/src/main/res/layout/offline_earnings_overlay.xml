@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000"
+    android:clickable="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="30dp"
+        android:orientation="vertical"
+        android:background="@drawable/offline_overlay_background"
+        android:padding="25dp"
+        android:elevation="10dp">
+
+        <!-- Welcome Back Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💰 ¡Bienvenido de vuelta!"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_gold"
+            android:gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Time Away Display -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/time_away_background"
+            android:padding="15dp"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⏰"
+                android:textSize="20sp"
+                android:layout_marginEnd="10dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tiempo ausente:"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_white"
+                    android:layout_marginBottom="2dp" />
+
+                <TextView
+                    android:id="@+id/timeAwayDisplay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2 horas 30 minutos"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_white" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Earnings Display -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/earnings_background"
+            android:padding="15dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="💸"
+                android:textSize="20sp"
+                android:layout_marginEnd="10dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ganancias generadas:"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_white"
+                    android:layout_marginBottom="2dp" />
+
+                <TextView
+                    android:id="@+id/earningsDisplay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1,250,000€"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_green" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Offline Limit Info -->
+        <TextView
+            android:id="@+id/offlineLimitInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📊 Límite offline: 1.0 horas"
+            android:textSize="11sp"
+            android:textColor="@color/text_blue"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:alpha="0.8" />
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/claimButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="¡Reclamar!"
+                android:background="@drawable/claim_button_background"
+                android:textColor="@color/text_white"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:padding="12dp"
+                android:layout_marginEnd="10dp" />
+
+            <Button
+                android:id="@+id/dismissButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="No gracias"
+                android:background="@drawable/dismiss_button_background"
+                android:textColor="@color/text_white"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:padding="12dp"
+                android:layout_marginStart="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
