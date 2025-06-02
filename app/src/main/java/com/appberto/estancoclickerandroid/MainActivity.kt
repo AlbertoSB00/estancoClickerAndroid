@@ -9,6 +9,7 @@ import android.content.Context
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -95,14 +96,26 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+
+        try {
+            Log.d("MainActivity", "Iniciando MainActivity")
+            setContentView(R.layout.activity_main)
+            Log.d("MainActivity", "Layout cargado correctamente")
 
         initializeGame()
         initializeUI()
         setupEventListeners()
-        startGameLoops()
-        calculateOfflineEarnings()
-        updateDisplay()
+            startGameLoops()
+            calculateOfflineEarnings()
+            updateDisplay()
+
+            Log.d("MainActivity", "MainActivity inicializada correctamente")
+
+        } catch (e: Exception) {
+            Log.e("MainActivity", "Error al inicializar MainActivity", e)
+            // Mostrar un mensaje de error básico
+            showNotification("Error al cargar el juego. Reintentando...")
+        }
     }
 
     private fun initializeGame() {

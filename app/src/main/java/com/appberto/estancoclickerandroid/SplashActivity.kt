@@ -6,6 +6,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.util.Log
 import android.view.animation.AccelerateDecelerateInterpolator
 import android.widget.ImageView
 import android.widget.TextView
@@ -15,11 +16,16 @@ class SplashActivity : AppCompatActivity() {
     
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_splash)
-        
-        val logo = findViewById<ImageView>(R.id.splashLogo)
-        val title = findViewById<TextView>(R.id.splashTitle)
-        val subtitle = findViewById<TextView>(R.id.splashSubtitle)
+
+        try {
+            Log.d("SplashActivity", "Iniciando SplashActivity")
+            setContentView(R.layout.activity_splash)
+
+            val logo = findViewById<ImageView>(R.id.splashLogo)
+            val title = findViewById<TextView>(R.id.splashTitle)
+            val subtitle = findViewById<TextView>(R.id.splashSubtitle)
+
+            Log.d("SplashActivity", "Views encontradas correctamente")
         
         // Inicializar elementos invisibles
         logo.alpha = 0f
@@ -65,11 +71,28 @@ class SplashActivity : AppCompatActivity() {
             mainAnimSet.start()
         }, 200)
         
-        // Ir a MainActivity después de las animaciones
-        Handler(Looper.getMainLooper()).postDelayed({
-            startActivity(Intent(this, MainActivity::class.java))
-            finish()
-            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
-        }, 2500)
+            // Ir a MainActivity después de las animaciones
+            Handler(Looper.getMainLooper()).postDelayed({
+                try {
+                    Log.d("SplashActivity", "Iniciando MainActivity")
+                    startActivity(Intent(this, MainActivity::class.java))
+                    finish()
+                    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
+                } catch (e: Exception) {
+                    Log.e("SplashActivity", "Error al iniciar MainActivity", e)
+                    // Fallback: ir directamente sin animación
+                    startActivity(Intent(this, MainActivity::class.java))
+                    finish()
+                }
+            }, 2500)
+
+        } catch (e: Exception) {
+            Log.e("SplashActivity", "Error en SplashActivity", e)
+            // Fallback: ir directamente a MainActivity
+            Handler(Looper.getMainLooper()).postDelayed({
+                startActivity(Intent(this, MainActivity::class.java))
+                finish()
+            }, 1000)
+        }
     }
 }
