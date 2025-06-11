@@ -11,10 +11,20 @@ android {
         applicationId = "com.appberto.estancoclickerandroid"
         minSdk = 24
         targetSdk = 35
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 2
+        versionName = "0.2.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    // Configuración de firmado
+    signingConfigs {
+        create("release") {
+            storeFile = file("../fumadero-upload-key.keystore")
+            storePassword = "fumadero123"
+            keyAlias = "fumadero"
+            keyPassword = "fumadero123"
+        }
     }
 
     buildFeatures {
@@ -28,6 +38,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            signingConfig = signingConfigs.getByName("release")
         }
     }
     compileOptions {
